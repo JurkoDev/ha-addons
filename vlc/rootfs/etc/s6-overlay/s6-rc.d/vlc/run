@@ -14,7 +14,8 @@ do
     sleep 1
 done
 
-bashio::log.info "PulseAudio socket available, starting VLC"
+bashio::log.info "PulseAudio socket available, starting VLC with alternate port also password ${PASSWORD}"
+
 
 # Send out discovery information to Home Assistant
 /etc/s6-overlay/scripts/vlc-discovery &
